@@ -40,6 +40,9 @@ const CountDown = () => {
     <>
       <GlobalStyleCountdownPage />
       <Helmet>
+        <meta content="Countdown Lunar New Year, Tết ([tet˧˥] or [təːt˧˥]), Vietnamese New Year, Vietnamese Lunar New Year or Tet Holiday, is the most important celebration in Vietnamese culture."
+        name="description" />
+        <title>Countdown Lunar New Year</title>
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link
           crossOrigin=""
