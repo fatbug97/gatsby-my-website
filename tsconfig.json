@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "module": "commonjs",
+        "paths": {
+            "*": ["src/*"]
+        },
+        "jsx": "react",
+        "esModuleInterop": true
+    },
+    "exclude": [
+        "__mocks__",
+        ".cache",
+        ".idea",
+        ".storybook",
+        "coverage",
+        "internals",
+        "node_modules",
+        "public",
+        "static",
+        "storybook-static"
+      ]
+}

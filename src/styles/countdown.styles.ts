@@ -1,5 +1,5 @@
+import background from 'images/background.webp'
 import styled, { createGlobalStyle } from 'styled-components'
-import background from './assets/background.webp'
 
 export const GlobalStyleCountdownPage = createGlobalStyle`
   :root {

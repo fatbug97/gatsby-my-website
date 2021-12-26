@@ -2,7 +2,7 @@ import moment from 'moment'
 import 'moment-lunar'
 import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
-import { CountdownPage, GlobalStyleCountdownPage } from './countdown.styles'
+import { CountdownPage, GlobalStyleCountdownPage } from 'styles/countdown.styles'
 
 const CountDown = () => {
   const countDownDate = moment().year(moment().year() + 1).month(0).date(1).solar().startOf('date').valueOf()
