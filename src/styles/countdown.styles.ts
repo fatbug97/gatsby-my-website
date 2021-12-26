@@ -36,7 +36,7 @@ export const CountdownPage = styled.div`
   }
 
   .content {
-    width: 650px;
+    max-width: 650px;
   }
 
   .heading {
@@ -106,6 +106,11 @@ export const CountdownPage = styled.div`
   @media only screen and (max-width: 600px) {
     .countdown {
       flex-direction: column;
+      flex-flow: wrap;
+    }
+
+    .time-box {
+      border-radius: 25px !important;
     }
 
     .content {
