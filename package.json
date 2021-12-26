@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "rm -rf docs && gatsby build && mv public docs",
+    "build": "rm -rf docs && gatsby build && mv public docs && cp gh-page/* docs",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "sortier": "sortier src",
