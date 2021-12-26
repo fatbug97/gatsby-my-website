@@ -10,7 +10,8 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "rm -rf docs && gatsby build && mv public docs && cp gh-page/* docs",
+    "predeploy": "gatsby build",
+    "deploy": "gh-pages -d public",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "sortier": "sortier src",
@@ -52,6 +53,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "5.2.0",
     "eslint-plugin-react": "7.28.0",
+    "gh-pages": "^3.2.3",
     "husky": "7.0.0",
     "lint-staged": ">=10",
     "sortier": "1.0.1",
