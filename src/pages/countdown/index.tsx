@@ -4,9 +4,8 @@ import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import { CountdownPage, GlobalStyleCountdownPage } from './countdown.styles'
 
-const countDownDate = moment().year(moment().year() + 1).month(0).date(1).solar().startOf('date').valueOf()
-
 const CountDown = () => {
+  const countDownDate = moment().year(moment().year() + 1).month(0).date(1).solar().startOf('date').valueOf()
   useEffect(() => {
     const timeClock = setInterval(function () {
       // Get today's date and time
