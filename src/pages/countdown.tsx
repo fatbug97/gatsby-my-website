@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import { CountdownPage, GlobalStyleCountdownPage } from 'styles/countdown.styles'
 
 const CountDown = () => {
-  const countDownDate = moment().year(moment().year() + 1).month(0).date(1).solar().startOf('date').valueOf()
+  const countDownDate = moment().year(moment().solar().year()).month(0).date(1).solar().startOf('date').valueOf()
   useEffect(() => {
     const timeClock = setInterval(function () {
       // Get today's date and time
@@ -65,7 +65,7 @@ const CountDown = () => {
         <div className="content">
           <div className="heading">
             <p className="title">Countdown Lunar New Year</p>
-            <p className="subtitle" id="today">Today: {moment().format('dddd DD/MM/YYYY')} | New year: {moment(countDownDate).format('dddd DD/MM/YYYY')}</p>
+            <p className="subtitle" id="today">Today: {moment().format('dddd DD/MM/YYYY')} | Lunar New Year: {moment(countDownDate).format('dddd DD/MM/YYYY')}</p>
           </div>
           <div className="countdown">
             <div className="time">
