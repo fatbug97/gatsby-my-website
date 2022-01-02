@@ -60,6 +60,7 @@ const CountDown = () => {
             href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Mulish:wght@300&family=Pushster&display=swap"
           />`}
         </noscript>
+        <html lang="en"></html>
       </Helmet>
       <CountdownPage>
         <div className="content">

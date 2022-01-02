@@ -11,7 +11,7 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "predeploy": "gatsby build",
-    "deploy": "gh-pages -d public",
+    "deploy": "echo 'thinh.xyz' > ./public/CNAME && gh-pages -d public",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "sortier": "sortier src",
