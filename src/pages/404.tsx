@@ -1,5 +1,6 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
+import styled from 'styled-components'
 
 // styles
 const pageStyles = {
@@ -24,6 +25,16 @@ const codeStyles = {
   padding: 4.5
 }
 
+const Why = styled.div`
+h4 {
+  margin-bottom: 0;
+}
+p {
+  margin-top: 0.5em;
+  color: grey;
+}
+`
+
 // markup
 const NotFoundPage = () => {
   return (
@@ -46,6 +57,25 @@ const NotFoundPage = () => {
           </>
             )
           : null}
+        <br />
+        <Why>
+          <div>
+            <h4>What happened?</h4>
+            <p>The page you are trying to access cannot be found.</p>
+          </div>
+          <div>
+            <h4>Why it happened?</h4>
+            <p>
+              The web server thinks that the HTTP data stream sent by the web
+              browser was correct, but simply can not provide the access to the
+              resource specified by your URL.
+            </p>
+          </div>
+          <div>
+            <h4>What can I do？</h4>
+            <p>Please check with the site owner that the URL is correct.</p>
+          </div>
+        </Why>
         <br />
         <Link to="/">Go home</Link>.
       </p>
