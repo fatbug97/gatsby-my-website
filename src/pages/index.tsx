@@ -1,5 +1,6 @@
 import moment from 'moment'
 import * as React from 'react'
+import { Helmet } from 'react-helmet'
 
 // styles
 const pageStyles = {
@@ -65,7 +66,9 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Home Page</title>
+      <Helmet>
+        <title>My name is Thịnh</title>
+      </Helmet>
       <h1 style={headingStyles}>
         Hello!
         <br />
