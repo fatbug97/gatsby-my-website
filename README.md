@@ -1,14 +1,20 @@
-<h1 align="center">
+<h2 align="center">
   My site thinh.xyz
-</h1>
+</h2>
 
-## 🚀 Quick start
-This page using GatsbyJS
+This page using GatsbyJS + TypeScript
 
 **Start developing.**
-
-  Navigate into your new site’s directory and start it up.
-
   ```shell
   yarn develop
+  ```
+
+**Build**
+  ```shell
+  yarn predeploy
+  ```
+
+**Deploy**
+  ```shell
+  yarn deploy
   ```
