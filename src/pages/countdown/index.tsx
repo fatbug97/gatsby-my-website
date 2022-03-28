@@ -5,7 +5,7 @@ import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 
 const CountDown = () => {
-  const countDownDate = moment().year(moment().solar().year()).month(0).date(1).solar().startOf('date').valueOf()
+  const countDownDate = moment().year(moment().solar().year() + 1).month(0).date(1).solar().startOf('date').valueOf()
   useEffect(() => {
     const timeClock = setInterval(function () {
       // Get today's date and time
