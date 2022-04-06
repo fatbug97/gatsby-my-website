@@ -3,28 +3,6 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 // styles
-const pageStyles = {
-  color: '#232129',
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
-  padding: '96px'
-}
-const headingStyles = {
-  marginBottom: 64,
-  marginTop: 0,
-  maxWidth: 320
-}
-
-const paragraphStyles = {
-  marginBottom: 48
-}
-const codeStyles = {
-  backgroundColor: '#FFF4DB',
-  borderRadius: 4,
-  color: '#8A6534',
-  fontSize: '1.25rem',
-  padding: 4.5
-}
-
 const Why = styled.div`
 h4 {
   margin-bottom: 0;
@@ -33,31 +11,25 @@ p {
   margin-top: 0.5em;
   color: grey;
 }
+div {
+  margin-bottom: 20px;
+}
 `
 
 // markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
+    <main className='p-20'>
       <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{' '}
-        <span aria-label="Pensive emoji" role="img">
-          😔
-        </span>{' '}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === 'development'
-          ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-            )
-          : null}
-        <br />
+      <h1 className='text-4xl font-black mb-2'>Page not found</h1>
+      <div>
+        <p className='text-xl font-light mb-10'>
+          Sorry{' '}
+          <span aria-label="Pensive emoji" role="img">
+            😔
+          </span>{' '}
+          we couldn’t find what you were looking for.
+        </p>
         <Why>
           <div>
             <h4>What happened?</h4>
@@ -77,8 +49,8 @@ const NotFoundPage = () => {
           </div>
         </Why>
         <br />
-        <Link to="/">Go home</Link>.
-      </p>
+        <Link className='underline decoration-wavy decoration-sky-500' to="/">Go home</Link>.
+      </div>
     </main>
   )
 }
